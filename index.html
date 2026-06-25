@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora Completa</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calculator">
+
+    <div class="display-container">
+        <input type="text" id="display" value="0" readonly>
+    </div>
+
+    <div class="buttons">
+
+        <button class="btn red" onclick="powerOff()">OFF</button>
+        <button class="btn green" onclick="powerOn()">ON</button>
+        <button class="btn green" onclick="clearEntry()">CE</button>
+        <button class="btn green" onclick="clearDisplay()">C</button>
+
+        <button class="btn orange" onclick="memoryClear()">MC</button>
+        <button class="btn gray" onclick="append('7')">7</button>
+        <button class="btn gray" onclick="append('8')">8</button>
+        <button class="btn gray" onclick="append('9')">9</button>
+        <button class="btn blue" onclick="append('/')">÷</button>
+
+        <button class="btn orange" onclick="memoryRecall()">MR</button>
+        <button class="btn gray" onclick="append('4')">4</button>
+        <button class="btn gray" onclick="append('5')">5</button>
+        <button class="btn gray" onclick="append('6')">6</button>
+        <button class="btn blue" onclick="append('*')">×</button>
+
+        <button class="btn orange" onclick="memoryAdd()">M+</button>
+        <button class="btn gray" onclick="append('1')">1</button>
+        <button class="btn gray" onclick="append('2')">2</button>
+        <button class="btn gray" onclick="append('3')">3</button>
+        <button class="btn blue" onclick="append('-')">−</button>
+
+        <button class="btn orange" onclick="memorySubtract()">M-</button>
+        <button class="btn gray" onclick="append('0')">0</button>
+        <button class="btn gray" onclick="append('.')">.</button>
+        <button class="btn gray" onclick="percent()">%</button>
+        <button class="btn yellow" onclick="calculate()">=</button>
+
+        <button class="btn gray" onclick="sqrt()">√</button>
+        <button class="btn gray" onclick="inverse()">1/x</button>
+        <button class="btn blue wide" onclick="append('+')">+</button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
